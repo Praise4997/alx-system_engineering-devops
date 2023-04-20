@@ -1,0 +1,9 @@
+#!/bin/bash
+# Duplicates the last line of the file iacta
+
+# Use tail to get the last line of the file
+last_line=$(tail -1 iacta)
+
+# Append the last line to the end of the file
+echo "$last_line" >> iacta
+

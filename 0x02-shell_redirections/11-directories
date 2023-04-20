@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Initialize counters
+dir_count=0
+subdir_count=0
+
+# Loop through all subdirectories (excluding current and parent directory)
+for dir in $(find . -mindepth 1 -maxdepth 1 -type d)
+do
+    # Increment directory count
+    ((dir_count++))
+
+    # Loop through all subdirectories of the current directory (excluding current and parent directory)
+    for subdir in $(find $dir -mindepth 1 -maxdepth 1 -type d)
+    do
+        # Increment subdirectory count
+        ((subdir_count++))
+    done
+done
+
+# Output results
+echo "Number of directories: $dir_count"
+echo "Number of subdirectories: $subdir_count"
+

@@ -1,0 +1,3 @@
+#!/bin/bash
+su betty
+exec su - betty -c 'echo "Effective usernmae: $(whoami)" '

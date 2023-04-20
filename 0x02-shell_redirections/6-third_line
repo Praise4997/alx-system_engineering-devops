@@ -1,0 +1,9 @@
+#!/bin/bash
+# Extracts the third line of the iacta file
+
+# Use head to extract the first 3 lines of the file, and tail to extract the third line
+line=$(head -n 3 iacta | tail -n 1)
+
+# Print the third line to the terminal
+echo $line
+

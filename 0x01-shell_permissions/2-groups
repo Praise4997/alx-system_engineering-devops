@@ -1,0 +1,9 @@
+#!/bin/bash
+
+current_user=$(whoami)
+
+group_info=$(id -Gn "$current_user")
+
+echo "Groups for user $current_user:"
+
+echo "$group_info"

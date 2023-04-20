@@ -1,0 +1,9 @@
+#!/bin/bash
+# Creates a file named *\\"Best School"\\*$?******:) containing the text "Best School"
+
+# Use echo to write the text to the file, and escape special characters as needed
+echo "Best School" > '*\\"Best School"\\*$?******:)'
+
+# Add a newline to the end of the file
+echo >> '*\\"Best School"\\*$?******:)'
+
